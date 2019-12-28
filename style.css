@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: right;
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 0em;
+}
+
+/* STRUCTURE */
+.site {
+  text-align: right;
+  margin-bottom: 4em;
+}
+
+.wrapper {
+  padding: 5px;
+  max-width: 960px;
+  width: 95%;
+  margin: 20px auto;
+}
+
+header {
+  font-size: 4vw;
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 6px;
+}
+
+.topper {
+  text-align: center;
+  background-color: #1a112a;
+  padding: 35px 0px;
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 4em;
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 4em 0;
+}
+
+.column {
+  flex: 1;
+  background-color: #1a112a;
+  border: 1px solid gray;
+  margin: 2px;
+  padding: 10px;
+}
+.column:first-child {
+  margin-left: 0;
+}
+.column:last-child {
+  margin-right: 0;
+}
+
+.box:hover:enabled {
+  color: #595f72;
+}
+
+.box {
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #eee;
+}
+
+footer {
+  padding: 0 15px;
+  font-family: oswald, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+  .columns .column:nth-last-child(2) {
+    margin-right: 0;
+  }
+  .columns .column:last-child {
+    flex-basis: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
