@@ -32,6 +32,13 @@ header {
   letter-spacing: 6px;
 }
 
+body {
+  padding: 0 15px;
+  text-align: center;
+  font-family: oswald, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
 .topper {
   text-align: center;
   background-color: #1a112a;
